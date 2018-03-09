@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en-US">
-
-<head>
-  <title>Portfolio: Grese Hyseni</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
-  <link rel="stylesheet" href="//basehold.it/18" />
-  <link rel="stylesheet" href="../css/screen.css" />
-</head>
+<?php include 'header.php'; ?>
 
 <body>
   <header id="header">
@@ -73,31 +62,5 @@
       </li>
     </ul>
   </main>
-  <footer id="footer">
-    <section class="copyright">
-      &copy; 2017 Copyright - Grese Hyseni
-    </section>
-    <section class="contact-info">
-      <address class="address">
-        3241 S Wabash Ave, Chicago, IL, USA
-      </address>
-      <a class="phone" href="tel:+19174598826">(+1)917-459-8826</a>
-      <a class="phone" href="tel:+38649777826">(+386)49 777 826</a>
-      <a class="email" href="mailto:hysenigresa@gmail.com">hysenigresa@gmail.com</a>
-    </section>
-  </footer>
-  <script src="../js/jquery-3.2.1.min.js"></script>
-  <script src="../js/app.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75992182-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-75992182-2');
-</script>
-
-</body>
-
-</html>
+<?php include '../footer.php'?>
