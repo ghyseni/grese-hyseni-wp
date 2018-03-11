@@ -37,7 +37,7 @@ function toggleMenuButton() {
 function setMainHeight() {
   var headerHeight = $('#header').outerHeight();
   var footerHeight = $('#footer').outerHeight();
-  var windowHeight = $(window).height();
+  var windowHeight = $(window).innerHeight();
   $('#main').css({
     'min-height': windowHeight - headerHeight - footerHeight - 1.125 * 16
   });
