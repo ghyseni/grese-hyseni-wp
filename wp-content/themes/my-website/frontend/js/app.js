@@ -35,11 +35,11 @@ function toggleMenuButton() {
 }
 
 function setMainHeight() {
-  var headerHeight = $('#header').outerHeight();
-  var footerHeight = $('#footer').outerHeight();
-  var windowHeight = $(window).innerHeight();
+  var headerHeight = $('#header').height();
+  var footerHeight = $('#footer').height();
+  var windowHeight = $(window).height(); 
   $('#main').css({
-    'min-height': windowHeight - headerHeight - footerHeight - 1.125 * 16
+    'min-height': windowHeight - headerHeight - footerHeight - 1.125 * 16*2
   });
 }
 
