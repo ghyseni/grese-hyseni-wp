@@ -223,7 +223,7 @@ article li li ol {
     display: block;
 }
 
-#nav a:hover {
+#nav a:hover, #nav li.current_page_item a {
     color: #b31178;
     transition: color 0.2s;
 }
@@ -250,7 +250,6 @@ article li li ol {
     background-size: contain;
     display: inline-block;
 }
-
 
 #nav .network .facebook, #nav .network .linkedin {
     width: 1.125rem;
@@ -348,13 +347,13 @@ article li li ol {
     background-color: #010101;
 }
 
-#footer .copyright{
-    float:right;
-    width:auto;
+#footer .copyright {
+    float: right;
+    width: auto;
 }
 
-#footer .contact-info{
-    float:left;
+#footer .contact-info {
+    float: left;
     width: auto;
 }
 
@@ -732,50 +731,60 @@ article li li ol {
     #main.about {
         padding-top: 0;
     }
+
     .about .content, .about .photo {
         width: 50%;
     }
+
     .about .content {
         margin-top: 1.125em;
         padding: 1.125em 5%;
     }
+
     .about .photo {
         float: left;
     }
+
     .about .bg-image {
         width: 50%;
     }
+
     .about .skills {
         position: initial;
         right: 0;
         text-align: right;
     }
+
     /* Resume */
     .resume {
         float: left;
         width: 100%;
     }
+
     .skills .skills-group {
         float: left;
         width: 50%;
     }
+
     .skills .skills-group ul {
         padding-top: 0;
     }
+
     /*Portfolio*/
     .portfolio .portfolio-entry {
-        position:relative;
+        position: relative;
         width: 50%;
         padding: 1.125em 5%;
     }
 
-    .portfolio .portfolio-entry img{
+    .portfolio .portfolio-entry img {
         -webkit-filter: blur(5px);
         -moz-filter: blur(5px);
         -o-filter: blur(5px);
         -ms-filter: blur(5px);
         filter: blur(5px);
     }
+
     /* .portfolio .portfolio-entry:after{
       content:"";
       position:absolute;
@@ -790,38 +799,46 @@ article li li ol {
         clear: left;
         background-color: #fff;
     }
+
     .portfolio .portfolio-entry:nth-child(3n-2) {
         background-color: #f2f2f2;
     }
+
     /*Contact*/
     .contact .content {
         width: 47.5%;
         padding: 1.125em 5%;
     }
+
     .contact .contact-form {
         margin-right: 5%;
     }
+
     /* CSS Grid*/
     .cssgrid .about .content {
         width: auto;
         padding: 1.125em 10%;
         grid-column: auto;
     }
+
     .cssgrid .about .photo {
         width: auto;
         grid-column: auto;
         align-self: flex-start;
     }
+
     .cssgrid .portfolio .portfolio-entry {
         width: auto;
         padding: 1.125em 10%;
         grid-column: auto;
     }
+
     .cssgrid .contact .content {
         width: auto;
         padding: 1.125em 10%;
         grid-column: auto;
     }
+
     .cssgrid .contact .contact-form {
         margin-right: 10%;
     }
@@ -831,6 +848,7 @@ article li li ol {
     .js body:after {
         content: "";
     }
+
     .js #nav {
         position: relative;
         top: auto;
@@ -846,9 +864,11 @@ article li li ol {
         /*9 / 16 = 0.5625*/
         text-align: center;
     }
+
     #header {
         padding: 1.125em 5%;
     }
+
     #header h1 {
         font-size: 2em;
         line-height: 1.6875em;
@@ -856,6 +876,7 @@ article li li ol {
         width: 9.625rem;
         /* 154 / 16 = 9.625*/
     }
+
     #nav {
         top: auto;
         left: auto;
@@ -867,26 +888,31 @@ article li li ol {
         /*9 / 16 = 0.5625*/
         text-align: center;
     }
+
     #nav li {
         display: inline;
     }
+
     #nav a {
         display: inline;
         float: none;
         padding: 0 1em;
         font-weight: bold;
     }
+
     #nav .menu {
         float: left;
         width: 80%;
         margin-bottom: 0;
         padding-bottom: 0;
     }
+
     #nav .network {
         float: right;
         max-width: 20%;
         padding-bottom: 0;
     }
+
     /*#show-nav {
       display: none;
     }*/
@@ -894,13 +920,16 @@ article li li ol {
         flex-wrap: nowrap;
         justify-content: space-between;
     }
+
     .flexbox #nav {
         flex-direction: row;
     }
+
     .flexbox #nav .menu {
         width: auto;
         flex-grow: 1;
     }
+
     .flexbox #header h1 {
         float: none;
     }
@@ -913,39 +942,49 @@ article li li ol {
         padding-right: 9.375rem;
         /*150/16 =9.375*/
     }
-    #footer{
+
+    #footer {
         padding-left: 9.375rem;
         padding-right: 9.375rem;
         /*150/16 =9.375*/
     }
+
     .content, .page-title {
         padding: 1.125rem 9.375rem;
         /*150/16 =9.375*/
     }
+
     .about .content, .cssgrid .about .content {
         padding: 1.125rem 9.375rem;
     }
+
     .page-title {
         padding-left: 9.375rem;
         padding-right: 9.375rem;
         /*150/16 =9.375*/
     }
+
     .portfolio .portfolio-entry, .cssgrid .portfolio .portfolio-entry {
         padding: 1.125em 9.375rem;
         /*300/16 =9.375*/
     }
+
     .contact .contact-info {
         width: 50%;
     }
+
     .contact .contact-form {
         width: calc(50% - 9.375em);
     }
+
     .contact .contact-info, .cssgrid .contact .contact-info {
         padding-left: 9.375rem;
     }
+
     .contact .contact-form, .cssgrid .contact .contact-form {
         margin-right: 9.375rem;
     }
+
     .contact .contact-form {
         margin-right: 0;
     }

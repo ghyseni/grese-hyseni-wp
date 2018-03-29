@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
     <main id="main" class="about">
 
         <article class="content">
@@ -18,7 +17,6 @@
 
         <section class="skills content">
             <?php
-
             // With WP_Query we will create a new query ( instead of the default - the one below while(havE_posts())
             // We will specify the arguments based on which the query will bring the result
             $args = array(
@@ -26,6 +24,9 @@
                 'pagename' => 'skills'
             );
             $skills_query = new WP_Query($args);
+
+            var_dump($skills_query);
+
             if ($skills_query->have_posts()):
                 while ($skills_query->have_posts()):
                     $skills_query->the_post();
@@ -35,10 +36,15 @@
                     the_content();
                 endwhile;
             endif;
-            // This allows that every template tag (like the_post_thumbnail()) will refer to the main query not to the custom wuery ($skills_query)
+            // This allows that every template tag
+            // (like the_post_thumbnail()) will refer to the main
+            // query not to the custom query ($skills_query)
             wp_reset_postdata();
             ?>
-            <span class="bg-image" style="background-image:url('<?php the_post_thumbnail_url('full'); ?>');"></span>
+            <span class="bg-image"
+                  style="background-image:url('<?php the_post_thumbnail_url('full'); ?>');">
+
+            </span>
         </section>
 
     </main>

@@ -2,14 +2,39 @@
     <section class="copyright">
         &copy; 2017 Copyright - Grese Hyseni
     </section>
-    <section class="contact-info">
-        <address class="address">
-            3241 S Wabash Ave, Chicago, IL, USA
-        </address>
-        <a class="phone" href="tel:+19174598826">(+1)917-459-8826</a>
-        <a class="phone" href="tel:+38649777826">(+386)49 777 826</a>
-        <a class="email" href="mailto:hysenigresa@gmail.com">hysenigresa@gmail.com</a>
-    </section>
+    <?php
+    $address = get_field('address', 41);
+    $tel = get_field('tel', 41);
+    $email = get_field('email', 41);
+
+    if ($address || $tel || $email):
+        ?>
+        <section class="contact-info">
+            <?php
+            if ($address):
+                ?>
+                <address class="address">
+                    <?php echo $address; ?>
+                </address>
+            <?php
+            endif;
+            if ($tel):
+                ?>
+                <a class="phone" href="tel:<?php echo $tel; ?>">
+                    <?php echo $tel; ?>
+                </a>
+            <?php
+            endif;
+            if ($email):
+                ?>
+                <a class="email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+            <?php
+            endif;
+            ?>
+        </section>
+    <?php
+    endif;
+    ?>
 </footer>
 <script src="<?php echo get_template_directory_uri(); ?>/frontend/js/jquery-3.2.1.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/frontend/js/app.js"></script>

@@ -13,7 +13,7 @@
 
 <body>
 <header id="header">
-    <h1><a href=""><?php echo bloginfo('name'); ?></a></h1>
+    <h1><a href="<?php echo get_home_url(); ?>"><?php echo bloginfo('name'); ?></a></h1>
     <!-- .opened class will be added to #nav using a jquery funciton, to open the menu after clicking the menu button -->
     <nav id="nav">
         <?php
